@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6691E904-8FD3-4E3D-BFBF-55CBDD1EE04A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OriBrainLearnerCore</RootNamespace>
+    <AssemblyName>OriBrainLearnerCore</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="glmDll">
+      <HintPath>D:\My_Dropbox\matlab dlls\glmDll\distrib\glmDll.dll</HintPath>
+    </Reference>
+    <Reference Include="MWArray, Version=2.11.0.0, Culture=neutral, PublicKeyToken=e1d84a0da19db86f, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\My_Dropbox\matlab dlls\glmDll\distrib\MWArray.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BinaryFilesReader.cs" />
+    <Compile Include="CodeBehind.cs" />
+    <Compile Include="cpp code.cs" />
+    <Compile Include="featureProcessingDefaults.cs" />
+    <Compile Include="GuiPreferences.cs" />
+    <Compile Include="IDataProcessor.cs" />
+    <Compile Include="jobsQueue.cs" />
+    <Compile Include="libSVM_Custom.cs" />
+    <Compile Include="libSVM_ProblemCustom.cs" />
+    <Compile Include="LibSVM_TrainTest.cs" />
+    <Compile Include="Preferences.cs" />
+    <Compile Include="ProcessGlm.cs" />
+    <Compile Include="ProcessOnsetAveraging.cs" />
+    <Compile Include="ProcessVoxelize.cs" />
+    <Compile Include="ProcessZscoreNormalize.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProtocolManager.cs" />
+    <Compile Include="PublicMethods.cs" />
+    <Compile Include="TestDLL.cs" />
+    <Compile Include="testSVM.cs" />
+    <Compile Include="Zip.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LibSVMFull\libSVMWrapper\libSVMWrapper.csproj">
+      <Project>{7691D0B0-52FA-430E-B87C-EBE1E8D4B825}</Project>
+      <Name>libSVMWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibSVMPredictOnly\JLib.LibSVM\JLib.LibSVM.csproj">
+      <Project>{CE4E030B-7383-4944-ADB5-BF8223261418}</Project>
+      <Name>JLib.LibSVM</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

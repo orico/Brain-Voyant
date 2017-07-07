@@ -1,11 +1,11 @@
-# BrainPatternClassifier
-A tool for classifying brain patterns from fMRI RAW DICOM data in real-time (and offline) based on machine learning methods.
-
-This Visual C# code enables you to build an application that uses a .prt protocol and accepts raw-based Dicom files from turbo-brain-voyager for the purpose of creating a machine learning classifier using SVM and IG for feature selection.
+# Brain Pattern Classifier
+A tool for classifying whole-brain patterns from fMRI RAW DICOM data in real-time (and offline) based on machine learning methods.
+We use supervised whole-brain data, without prior knowledge of regions of interest (ROIs) to converge on the relevant voxels. 
+i.e., our tool will figure out which voxels are contributing to the task and choose them automatically.
+The Visual C# code enables you to build an application that uses a .prt protocol and accepts raw-based Dicom files from turbo-brain-voyager for the purpose of creating a machine learning classifier using SVM and IG for feature selection.
 it does a bunch of other things, please look at the following papers for details. 
-
-if you plan on using this code for experimental purposes please cite paper #4.
-
+if you plan on using this code for experimental purposes and write a paper, please cite paper #4.
+                                                                                                                           
 ** please note that there are some missing libraries, which will be added later.
 
 1. Cohen, O, Keith, F, Kheddar, A, Koppel, M, Malach, R, & Friedman, D (2017). Real-time fMRI Control of a Humanoid Robot using Two Brain Networks Simultaneously: A Pilot Study. 7th Graz Brain-Computer Interface Conference, 2017.

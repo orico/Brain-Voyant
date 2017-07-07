@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FF9407FE-FF14-4766-AD81-6C2384F9004E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OriBrainLearnerCore</RootNamespace>
+    <AssemblyName>OriBrainLearnerCore</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\OriBrainLearnerCore.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;G:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;G:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\OriBrainLearnerCore.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;G:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;G:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\sharedDLLs\OriBrainLearnerCore\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\OriBrainLearnerCore.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\OriBrainLearnerCore.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AsyncPipes, Version=0.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\sharedDLLs\AsyncPipeLib\x64\debug\AsyncPipes.dll</HintPath>
+    </Reference>
+    <Reference Include="DicomImageViewer, Version=1.2.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\sharedDLLs\DicomImageViewer\x64\debug\DicomImageViewer.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\sharedDLLs\JAVAAssemblies\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.AWT.WinForms">
+      <HintPath>..\sharedDLLs\JAVAAssemblies\IKVM.AWT.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Beans">
+      <HintPath>..\sharedDLLs\JAVAAssemblies\IKVM.OpenJDK.Beans.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Charsets">
+      <HintPath>..\sharedDLLs\JAVAAssemblies\IKVM.OpenJDK.Charsets.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Corba">
+      <HintPath>..\sharedDLLs\JAVAAssemblies\IKVM.OpenJDK.Corba.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Core">
+      <HintPath>..\sharedDLLs\JAVAAssemblies\IKVM.OpenJDK.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Jdbc">
+      <HintPath>..\sharedDLLs\JAVAAssemblies\IKVM.OpenJDK.Jdbc.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Management">
+      <HintPath>..\sharedDLLs\JAVAAssemblies\IKVM.OpenJDK.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Media">
+      <HintPath>..\sharedDLLs\JAVAAssemblies\IKVM.OpenJDK.Media.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Misc">
+      <HintPath>..\sharedDLLs\JAVAAssemblies\IKVM.OpenJDK.Misc.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Naming">
+      <HintPath>..\sharedDLLs\JAVAAssemblies\IKVM.OpenJDK.Naming.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Remoting">
+      <HintPath>..\sharedDLLs\JAVAAssemblies\IKVM.OpenJDK.Remoting.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Security">
+      <HintPath>..\sharedDLLs\JAVAAssemblies\IKVM.OpenJDK.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.SwingAWT">
+      <HintPath>..\sharedDLLs\JAVAAssemblies\IKVM.OpenJDK.SwingAWT.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Text">
+      <HintPath>..\sharedDLLs\JAVAAssemblies\IKVM.OpenJDK.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Tools">
+      <HintPath>..\sharedDLLs\JAVAAssemblies\IKVM.OpenJDK.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Util">
+      <HintPath>..\sharedDLLs\JAVAAssemblies\IKVM.OpenJDK.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.API">
+      <HintPath>..\sharedDLLs\JAVAAssemblies\IKVM.OpenJDK.XML.API.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Bind">
+      <HintPath>..\sharedDLLs\JAVAAssemblies\IKVM.OpenJDK.XML.Bind.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Crypto">
+      <HintPath>..\sharedDLLs\JAVAAssemblies\IKVM.OpenJDK.XML.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Parse">
+      <HintPath>..\sharedDLLs\JAVAAssemblies\IKVM.OpenJDK.XML.Parse.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Transform">
+      <HintPath>..\sharedDLLs\JAVAAssemblies\IKVM.OpenJDK.XML.Transform.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.WebServices">
+      <HintPath>..\sharedDLLs\JAVAAssemblies\IKVM.OpenJDK.XML.WebServices.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.XPath">
+      <HintPath>..\sharedDLLs\JAVAAssemblies\IKVM.OpenJDK.XML.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.Reflection">
+      <HintPath>..\sharedDLLs\JAVAAssemblies\IKVM.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.Runtime">
+      <HintPath>..\sharedDLLs\JAVAAssemblies\IKVM.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.Runtime.JNI">
+      <HintPath>..\sharedDLLs\JAVAAssemblies\IKVM.Runtime.JNI.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython, Version=2.7.0.40, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\sharedDLLs\ironPython2.7PlatformNet4.0DLL\IronPython.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython.Modules, Version=2.7.0.40, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\sharedDLLs\ironPython2.7PlatformNet4.0DLL\IronPython.Modules.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython.SQLite, Version=2.7.0.40, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\sharedDLLs\ironPython2.7PlatformNet4.0DLL\IronPython.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython.Wpf, Version=2.7.0.40, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\sharedDLLs\ironPython2.7PlatformNet4.0DLL\IronPython.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Dynamic, Version=1.1.0.20, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\sharedDLLs\ironPython2.7PlatformNet4.0DLL\Microsoft.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Scripting, Version=1.1.0.20, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\sharedDLLs\ironPython2.7PlatformNet4.0DLL\Microsoft.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Scripting.AspNet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\sharedDLLs\ironPython2.7PlatformNet4.0DLL\Microsoft.Scripting.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Scripting.Metadata, Version=1.1.0.20, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\sharedDLLs\ironPython2.7PlatformNet4.0DLL\Microsoft.Scripting.Metadata.dll</HintPath>
+    </Reference>
+    <Reference Include="MWArray, Version=2.11.0.0, Culture=neutral, PublicKeyToken=e1d84a0da19db86f, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\sharedDLLs\MWarrayDLLs\64\MWArray.dll</HintPath>
+    </Reference>
+    <Reference Include="StringTokenizer">
+      <HintPath>..\sharedDLLs\StringTokenizer\x64\Debug\StringTokenizer.dll</HintPath>
+    </Reference>
+    <Reference Include="svm-scale">
+      <HintPath>..\sharedDLLs\svm-scale\x64\Debug\svm-scale.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="weka">
+      <HintPath>..\sharedDLLs\WekaAssembly\weka.dll</HintPath>
+    </Reference>
+    <Reference Include="WekaWrapper">
+      <HintPath>..\sharedDLLs\WekaWrapper\x64\debug\WekaWrapper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConfigManager.cs" />
+    <Compile Include="Normalize_RawMinusMedWin.cs" />
+    <Compile Include="Normalize_None.cs" />
+    <Compile Include="KthVectors.cs" />
+    <Compile Include="Normalize_RawMinusMedWinIqrWin.cs" />
+    <Compile Include="Normalize_RawDivMed.cs" />
+    <Compile Include="Normalize_RawMinusMedDivMed.cs" />
+    <Compile Include="Normalize_RawMinusMed.cs" />
+    <Compile Include="Normalize_PercentageChange.cs" />
+    <Compile Include="NormalizationInterface.cs" />
+    <Compile Include="Logging.cs" />
+    <Compile Include="NamedPipeClient.cs" />
+    <Compile Include="NormalizationManager.cs" />
+    <Compile Include="KthExtractionManager.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RamMethods.cs" />
+    <Compile Include="Sound.cs" />
+    <Compile Include="StatisticsAccuracy.cs" />
+    <Compile Include="AsyncNamedPipeServer.cs" />
+    <Compile Include="BinaryReaderUnusedMethods.cs" />
+    <Compile Include="BinaryReader.cs" />
+    <Compile Include="Controllers\FileBrowserDialogEx.cs" />
+    <Compile Include="FileDirectoryOperations.cs" />
+    <Compile Include="GuiManager.cs" />
+    <Compile Include="JobManager.cs" />
+    <Compile Include="Training_Importing.cs" />
+    <Compile Include="PlotManager.cs" />
+    <Compile Include="RealTimeProcessing.cs" />
+    <Compile Include="Normalize_Range.cs" />
+    <Compile Include="Events.cs" />
+    <Compile Include="HistogramaDesenat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HistogramaDesenat.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HistogramaDesenat.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ID3.cs" />
+    <Compile Include="NamedPipeServer.cs" />
+    <Compile Include="CodeBehind.cs" />
+    <Compile Include="cpp code.cs" />
+    <Compile Include="featureProcessingDefaults.cs" />
+    <Compile Include="GuiPreferences.cs" />
+    <Compile Include="IDataProcessor.cs" />
+    <Compile Include="JobsQueue.cs" />
+    <Compile Include="libSVM_Extension.cs" />
+    <Compile Include="libSVM_ExtendedProblem.cs" />
+    <Compile Include="LibSVM_TrainTest.cs" />
+    <Compile Include="Preferences.cs" />
+    <Compile Include="ProcessGlm.cs" />
+    <Compile Include="ProcessOnsetAveraging.cs" />
+    <Compile Include="ProcessVoxelize.cs" />
+    <Compile Include="ProcessZscoreNormalize.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProtocolManager.cs" />
+    <Compile Include="TrainingTesting_SharedVariables.cs" />
+    <Compile Include="Normalize_MinMax.cs" />
+    <Compile Include="StatisticsFeatures.cs" />
+    <Compile Include="PipeLineTestFunctions.cs" />
+    <Compile Include="testSVM.cs" />
+    <Compile Include="Training_MultiRunPlotting.cs" />
+    <Compile Include="Training_OLDProcessing.cs" />
+    <Compile Include="Training_MultiRunProcessing.cs" />
+    <Compile Include="Training_MultiRunTraining.cs" />
+    <Compile Include="Training_Output.cs" />
+    <Compile Include="Training_SingleRunTraining.cs" />
+    <Compile Include="UDPSim.cs" />
+    <Compile Include="UDPWrapper.cs" />
+    <Compile Include="ExtensionFunctions.cs" />
+    <Compile Include="WekaCommonFileOperation.cs" />
+    <Compile Include="Controllers\Win32.cs" />
+    <Compile Include="WekaTrainingMethods.cs" />
+    <Compile Include="XMLSerializer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LibSVMWrapper\libSVMWrapper\libSVMWrapper.csproj">
+      <Project>{7691D0B0-52FA-430E-B87C-EBE1E8D4B825}</Project>
+      <Name>libSVMWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibSVM\JLib.LibSVM\JLib.LibSVM.csproj">
+      <Project>{CE4E030B-7383-4944-ADB5-BF8223261418}</Project>
+      <Name>JLib.LibSVM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MatlabGLM\MatlabGLM.csproj">
+      <Project>{9881C7BE-3392-46CF-B6B4-40BAE8DDAC03}</Project>
+      <Name>MatlabGLM</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HistogramaDesenat.resx">
+      <DependentUpon>HistogramaDesenat.cs</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>HistogramaDesenat.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tada.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EverythingFinished.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImportingFinished.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProcessingFinished.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestingFinished.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TrainingFinished.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

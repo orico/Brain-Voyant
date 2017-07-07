@@ -1,0 +1,1 @@
+f = open("ori.txt","w")f.write("asd");f.close()
